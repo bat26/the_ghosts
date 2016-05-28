@@ -17,14 +17,14 @@ class CfgVehicles
 		scope = 1;
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
 		hiddenSelections[] = {"camo","insignia"};
-		hiddenSelectionsTextures[] = {"\goc_uniforms\data\woodland_bdu.paa"};
+		hiddenSelectionsTextures[] = {"\the_ghosts\goc_uniforms\data\woodland_bdu.paa"};
 	};
 	class Ghost_Woodland_2: B_Soldier_base_F
 	{
 		scope = 1;
 		model = "\A3\Characters_F_Beta\INDEP\ia_soldier_02.p3d";
 		hiddenSelections[] = {"camo","insignia"};
-		hiddenSelectionsTextures[] = {"\goc_uniforms\data\woodland_bdu.paa"};
+		hiddenSelectionsTextures[] = {"\the_ghosts\goc_uniforms\data\woodland_bdu.paa"};
 	};
 
 };
@@ -56,7 +56,7 @@ class cfgWeapons
 		{
 			scope = 2;
 			displayName = "Ghost Woodland Uniform 1";
-			picture = "\goc_uniforms\goc_logo.paa";
+			picture = "\the_ghosts\goc_uniforms\goc_logo.paa";
 			model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 			class ItemInfo: UniformItem
 			{
@@ -70,7 +70,7 @@ class cfgWeapons
 		{
 			scope = 2;
 			displayName = "Ghost Woodland Uniform 2";
-			picture = "\goc_uniforms\goc_logo.paa";
+			picture = "\the_ghosts\goc_uniforms\goc_logo.paa";
 			model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 			class ItemInfo: UniformItem
 			{
@@ -85,10 +85,10 @@ class cfgWeapons
 		{
 			scope = 2;
 			displayName = "Ghost PASGT Woodland";
-			picture = "\goc_uniforms\goc_logo.paa";
+			picture = "\the_ghosts\goc_uniforms\goc_logo.paa";
 			model = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
 			hiddenSelections[] = {"camo"};
-			hiddenSelectionsTextures[] = {"\goc_uniforms\data\woodland_helmet.paa"};
+			hiddenSelectionsTextures[] = {"\the_ghosts\goc_uniforms\data\woodland_helmet.paa"};
 			class ItemInfo: ItemInfo
 			{
 				mass = 40;
@@ -105,9 +105,9 @@ class cfgWeapons
 			scope = 2;
 			displayName = "Ghost Boonie Woodland";
 			model = "\A3\Characters_F\Common\booniehat";
-			picture = "\goc_uniforms\goc_logo.paa";
+			picture = "\the_ghosts\goc_uniforms\goc_logo.paa";
 			hiddenSelections[] = {"camo"};
-			hiddenSelectionsTextures[] = {"\goc_uniforms\data\woodland_boonie.paa"};
+			hiddenSelectionsTextures[] = {"\the_ghosts\goc_uniforms\data\woodland_boonie.paa"};
 			class ItemInfo: ItemInfo
 			{
 				mass = 10;

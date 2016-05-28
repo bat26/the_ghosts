@@ -32,3 +32,11 @@ Support will be available through an installation guide. TBD
 ## Contact
 
 For any matters please get in touch using my contact details on GitHub.
+
+## Dev Standards
+
+If you wish to add or branch this project please follow these styles
+
+* Camelcasing for all variables.
+* File wording to be split with underscores.
+* If a group of files can be grouped, then place them into a subfolder to improve the organisation of the project.
