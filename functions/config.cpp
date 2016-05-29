@@ -19,19 +19,16 @@ class CfgFunctions
 			class HelloWorld {file = "\the_ghosts\functions\misc\hello_world.sqf";};
 		};
 
-        // Scripts for Units
+        // Scripts for units
 		class Unit
 		{
-
 		    class Hit {file = "\the_ghosts\functions\unit\hit.sqf";};
+		}
 
-
-
-
-
-
-
-
+		// Scripts for missions
+		class Mission
+		{
+		    class Chatter {file = "\the_ghosts\functions\mission\chatter.sqf";};
 		}
 	};
 };

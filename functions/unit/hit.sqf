@@ -3,8 +3,8 @@
     This function provides effects when a unit is hit either by enemy / friendly shots
 */
 
-_unitHit = _this select 0;
-_unitResponsible = _this select 1;
+private _unitHit = _this select 0;
+private _unitResponsible = _this select 1;
 
 //check if unit damaged itself, if so then exit
 if (_unitHit isEqualTo _unitResponsible ) exitWith {};

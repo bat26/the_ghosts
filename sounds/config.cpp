@@ -9,5 +9,10 @@ class CfgPatches
     };
 };
 
-#include "male1.hpp"
-#include "male2.hpp"
+class CfgSounds
+{
+    sounds[] = {};
+    #include "male1.hpp"
+    #include "male2.hpp"
+    #include "male3.hpp"
+};

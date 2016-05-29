@@ -40,13 +40,12 @@ class cfgWeapons
 		class ItemInfo;
 	};
 	
-	class H_HelmetB: ItemCore
+	class ItemCore : ItemCore
 	{
 		armor = "0";
 		passThrough = 0;
 	};
 
-		
 		//
 		// Woodland Kit
 		//
@@ -56,6 +55,7 @@ class cfgWeapons
 			displayName = "Ghost Woodland Uniform 1";
 			picture = "\the_ghosts\goc_logo.paa";
 			model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+            author = "ecurb";
 			class ItemInfo: UniformItem
 			{
 				uniformModel = "-";
@@ -70,6 +70,7 @@ class cfgWeapons
 			displayName = "Ghost Woodland Uniform 2";
 			picture = "\the_ghosts\goc_logo.paa";
 			model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+            author = "ecurb";
 			class ItemInfo: UniformItem
 			{
 				uniformModel = "-";
@@ -79,15 +80,16 @@ class cfgWeapons
 			};
 		};
 		
-		class Ghost_Helmet_Woodland: H_HelmetB
+		class Ghost_Helmet_Woodland: ItemCore
 		{
 			scope = 2;
 			displayName = "Ghost PASGT Woodland";
 			picture = "\the_ghosts\goc_logo.paa";
 			model = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
+            author = "ecurb";
 			hiddenSelections[] = {"camo"};
 			hiddenSelectionsTextures[] = {"\the_ghosts\uniforms\data\woodland_helmet.paa"};
-			class ItemInfo: ItemInfo
+			class ItemInfo: HeadgearItem
 			{
 				mass = 40;
 				allowedSlots[] = {901,605};
@@ -98,15 +100,16 @@ class cfgWeapons
 			};
 		};
 		
-		class Ghost_Boonie_Helmet: H_HelmetB
+		class Ghost_Boonie_Helmet: ItemCore
 		{
 			scope = 2;
 			displayName = "Ghost Boonie Woodland";
 			model = "\A3\Characters_F\Common\booniehat";
+            author = "ecurb";
 			picture = "\the_ghosts\goc_logo.paa";
 			hiddenSelections[] = {"camo"};
 			hiddenSelectionsTextures[] = {"\the_ghosts\uniforms\data\woodland_boonie.paa"};
-			class ItemInfo: ItemInfo
+			class ItemInfo: HeadgearItem
 			{
 				mass = 10;
 				allowedSlots[] = {801,901,701,605};

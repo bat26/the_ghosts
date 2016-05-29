@@ -1,5 +1,3 @@
-class CfgSounds
-{
         class tm1_blocked_water
         {
             name = "tm1_blocked_water";
@@ -820,4 +818,3 @@ class CfgSounds
             name = "tm1_wounded_team3";
             sound[] = { "\the_ghosts\sounds\male_1\tm1_wounded_team3.wav",1,1 };
         };
-};

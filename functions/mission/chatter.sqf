@@ -3,6 +3,18 @@
     This function provides sounds effects causing the squad to begin chatting at the start of the mission to add some ambience
 */
 
-_sound = ["hq_intro_message1","hq_intro_message2","hq_intro_message3", "hq_intro_message4", "hq_intro_message5"] call BIS_fnc_selectRandom;
-//_sound ={["\sounds\rainbow\hq\jcf_gen1.wav","\sounds\rainbow\hq\jcf_gen2.wav","\sounds\rainbow\hq\jcf_gen3.wav", "\sounds\rainbow\hq\jcf_gen4.wav", "\sounds\rainbow\hq\jcf_gen4.wav5"] call BIS_fnc_selectRandom, 1.3, 1.0};  
-playSound _sound;
+params ["_scenario"];
+private _conversation1 = [];
+private _conversation2 = [];
+
+switch (_scenario) do
+{
+    case "normal": {
+            _conversation1 = ["tm1_start1a", "tm2_start1a"] call BIS_fnc_selectRandom;
+            _conversation2 = ["tm1_start1b", "tm2_start2b"] call BIS_fnc_selectRandom;
+    };
+    default { hint "Cannot find chatter for this scenario" };
+};
+
+player say _conversation1;
+player say _conversation2;
