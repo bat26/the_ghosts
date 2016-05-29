@@ -1,4 +1,4 @@
-[logo]: the_ghosts.png "Title image"
+![The Ghosts](https://github.com/bat26/the_ghosts/blob/master/the%20ghosts.png?raw=true "The Ghosts")
 
 # The Ghosts
 
