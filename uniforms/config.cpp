@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class GOC_Units
+    class Ghost_Units
     {
         units[] = {};
         weapons[] = {};
@@ -26,9 +26,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo","insignia"};
 		hiddenSelectionsTextures[] = {"\the_ghosts\uniforms\data\woodland_bdu.paa"};
 	};
-
 };
-
 
 class cfgWeapons
 {

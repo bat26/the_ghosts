@@ -10,7 +10,7 @@ class CfgPatches
 };
 class CfgUnitInsignia
 {
-	class GOC_Patch
+	class GhostPatch
 	{
 		displayName = "Ghost Patch";
 		author = "ecurb";
@@ -23,6 +23,14 @@ class CfgUnitInsignia
         displayName = "Kappa";
         author = "ecurb";
         texture = "\the_ghosts\patches\kappa.paa";
+        textureVehicle = "";
+    };
+
+    class RainbowLogoWhite
+    {
+        displayName = "Rainbow Patch White";
+        author = "ecurb";
+        texture = "\the_ghosts\patches\rainbow_white.paa";
         textureVehicle = "";
     };
 };

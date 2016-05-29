@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class sounds
+    class Ghost_Sounds
     {
         units[] = {};
         weapons[] = {};
@@ -10,3 +10,4 @@ class CfgPatches
 };
 
 #include "male1.hpp"
+#include "male2.hpp"
