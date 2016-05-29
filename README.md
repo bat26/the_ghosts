@@ -1,3 +1,5 @@
+[logo]: the_ghosts.png "Title image"
+
 # The Ghosts
 
 ArmA 3 addon that provides an immersive campaign focused around an elite company of soldiers
