@@ -14,7 +14,9 @@ First person shooters have been around now for more than 25 years (can you belie
 One style that had a lasting effect on me was the [Tactical Shooter] (https://en.wikipedia.org/wiki/Tactical_shooter "Tactical Shooter").
 Sadly over the years this style of FPS has been neglected and cast to the sidelines where it has been kept alive by MilSim companies
 but without that reach that it had before.
+
 I want to capture the essence of what the tactical shooters were providing and repackage it for people to enjoy again.
+
 ---
 ## Unit Classes and Kit
 * **Rifleman**: the main unit that comprises all squads. Standard issue US weapons will include M4A1, M16A2 w/ M203, M67 Frags, M9 or MK23 pistols.
