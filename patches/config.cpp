@@ -18,6 +18,14 @@ class CfgUnitInsignia
 		textureVehicle = "";
 	};
 
+    class GhostPatch_OD
+    {
+        displayName = "Ghost Patch OD";
+        author = "ecurb";
+        texture = "\the_ghosts\patches\goc_patch_od.paa";
+        textureVehicle = "";
+    };
+
 	class Kappa
     {
         displayName = "Kappa";

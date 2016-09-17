@@ -15,6 +15,6 @@ switch (_scenario) do
     };
     default { hint "Cannot find chatter for this scenario" };
 };
-
-player say _conversation1;
-player say _conversation2;
+playSound [_conversation1, true];
+sleep 1;
+playSound [_conversation2, true];
