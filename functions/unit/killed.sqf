@@ -1,24 +1,16 @@
 /*
     Hit.sqf
-    This function provides effects when a unit killed
+    This function provides effects when a unit is killed
 */
+params ["_unit", "_killer"];
 
-_unit = _this select 0;
-_killer = _this select 1;
+playSound selectRandom ["tm1_killed_self1","tm1_killed_self2","tm1_killed_self3", "tm1_killed_self4", "tm1_killed_self5","tm1_killed_self6","tm1_killed_self7","tm1_killed_self8", "tm1_killed_self9", "tm1_killed_self10", "tm1_killed_self11","tm1_killed_self12","tm1_killed_self13"];
+sleep 1;
 
-if (side _killer isEqualTo WEST) then
-{
-	_sound = ["tangodown1","tangodown2","tangodown3"] call BIS_fnc_selectRandom;
-	playSound _sound;
-};
-if (side _killer isEqualTo EAST || side _killer isEqualTo RESISTANCE || side _unit isEqualTo WEST) then
-{
-	_sound = ["incapacitated1","incapacitated2","incapacitated3"] call BIS_fnc_selectRandom;
-	playSound _sound;
-	sleep 1;
-	_mandown = ["tm1_killed_team1","tm1_killed_team2", "tm1_killed_team3", "tm2_killed_team1", "tm2_killed_team2", "tm2_killed_team3"] call BIS_fnc_selectRandom;
-	playSound _mandown;
-	sleep 1;
-	_sadmusic = ["Death1","Death2","Death3", "Death4", "Death5"] call BIS_fnc_selectRandom;
-	playMusic [_sadmusic, 0];
-};
+    if !(side group _unit isEqualTo side group _killer) then
+    {
+          playSound selectRandom ["tm1_killed_team1","tm1_killed_team2", "tm1_killed_team3", "tm2_killed_team1", "tm2_killed_team2", "tm2_killed_team3"];
+          sleep 1;
+          playMusic selectRandom ["Death1","Death2","Death3", "Death4", "Death5", "Death6"];
+          sleep 1;
+    }

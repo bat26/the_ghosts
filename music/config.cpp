@@ -14,32 +14,32 @@ class CfgMusic
     class AAR_Loss
     {
         name = "After Action Loss";
-        sound[] = { "\the_ghosts\music\music\aar_loss.wav",1,1 };
+        sound[] = { "\the_ghosts\music\music\aar_loss.wav",2,1 };
     };
     class AAR_Win
     {
         name = "After Action Win";
-        sound[] = { "\the_ghosts\music\music\aar_win.wav",1,1 };
+        sound[] = { "\the_ghosts\music\music\aar_win.wav",2,1 };
     };
     class Action1
     {
         name = "Action 1";
-        sound[] = { "\the_ghosts\music\music\action1.wav",1,1 };
+        sound[] = { "\the_ghosts\music\music\action1.wav",2,1 };
     };
     class Action3
     {
         name = "Action 3";
-        sound[] = { "\the_ghosts\music\music\action3.wav",1,1 };
+        sound[] = { "\the_ghosts\music\music\action3.wav",2,1 };
     };
     class Action5
     {
         name = "Action 5";
-        sound[] = { "\the_ghosts\music\music\action5.wav",1,1 };
+        sound[] = { "\the_ghosts\music\music\action5.wav",2,1 };
     };
     class Credits
     {
         name = "Credits";
-        sound[] = { "\the_ghosts\music\music\credits.wav",1,1 };
+        sound[] = { "\the_ghosts\music\music\credits.wav",2,1 };
     };
     class Death1
     {
@@ -74,7 +74,7 @@ class CfgMusic
     class Intro
     {
         name = "Intro";
-        sound[] = { "\the_ghosts\music\music\intro.wav",1,1 };
+        sound[] = { "\the_ghosts\music\music\intro.wav",2,1 };
     };
     class KitMusic
     {
@@ -84,7 +84,7 @@ class CfgMusic
     class Load1
     {
         name = "Load 1";
-        sound[] = { "\the_ghosts\music\music\load1.wav",1,1 };
+        sound[] = { "\the_ghosts\music\music\load1.wav",2,1 };
     };
     class Load3
     {
@@ -94,6 +94,6 @@ class CfgMusic
     class Theme
     {
         name = "Main Theme";
-        sound[] = { "\the_ghosts\music\music\theme.wav",1,1 };
+        sound[] = { "\the_ghosts\music\music\theme.wav",2,1 };
     };
 }

@@ -23,12 +23,19 @@ class CfgFunctions
 		class Unit
 		{
 		    class Hit {file = "\the_ghosts\functions\unit\hit.sqf";};
-		}
+		    class Death {file = "\the_ghosts\functions\unit\killed.sqf";}; //killed is a keyword in BIS namespace :o
+		};
 
 		// Scripts for missions
 		class Mission
 		{
-		    class Chatter {file = "\the_ghosts\functions\mission\chatter.sqf";};
-		}
+		    class MissionChatter {file = "\the_ghosts\functions\mission\chatter.sqf";};
+		};
+
+		// Scripts for vehicles
+		class VehicleScripts
+		{
+			class VehicleChatter {file = "\the_ghosts\functions\vehicle\vehicle_radio.sqf";};
+		};
 	};
 };

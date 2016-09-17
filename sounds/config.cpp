@@ -15,4 +15,5 @@ class CfgSounds
     #include "male1.hpp"
     #include "male2.hpp"
     #include "male3.hpp"
+    #include "helicopter.hpp"
 };

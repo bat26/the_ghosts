@@ -1,0 +1,59 @@
+﻿/*
+	This is the main configuration file of the campaign, it can be accessed via a script or a mission with campaignConfigFile (https://community.bistudio.com/wiki/campaignConfigFile)
+*/
+
+class Campaign
+{
+	name = "CO1 - The First Part";
+	disableMP = 1;
+
+	briefingName = "The Ghosts have been deployed to Chernarus to contain a Russiab backed insurgency to the north."; // Name
+	author = "ecurb";	// Author
+	overviewPicture = ""; // TODO
+	overviewText = "";	// TODO
+
+	// Class within scope from which to read missions
+	firstBattle = Missions;
+
+	// Default template from which missions inherit
+	class MissionDefault
+	{
+		lives = -1;
+
+		lost = ;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+	};
+
+	// Class containing missions, functions as a chapter
+	class Missions
+	{
+		name = "The Beginning";
+		cutscene = ;			// Cutscene that plays at the chapter start, does not appear in mission list
+		firstMission = Example01;	// Class of the first mission of the chapter
+		end1 = ;			// Chapter endings. Uses classes of defined chapters to move on to. Blank ends the campaign
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+		lost = ;
+
+		// First mission in the list
+		class Example01: MissionDefault
+		{
+			template = Example01.Altis;	// Mission file. They must always be located in the 'Missions' folder within the campaign
+			end1 = Example02;		// Endings. Uses classes of defined missions within episode to move on to. Blank ends the campaign
+		};
+
+		// Second mission in the list, ends the episode
+		class Example02: MissionDefault
+		{
+			template = Example02.Altis;
+		};
+	};
+};

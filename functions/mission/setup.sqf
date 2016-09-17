@@ -11,8 +11,8 @@ enableRadio false;
 	//ghost event handlers
 	if (side _x isEqualTo WEST) then
 	{
-		_x addEventHandler ["Hit", {[_this select 0, _this select 1] execVM "scripts\hit.sqf";}];
-		_x addEventHandler ["Killed", {[_this select 0, _this select 1] execVM "scripts\killed.sqf";}];
+		_x addEventHandler ["Hit", {[_this select 0, _this select 1] call GhostFunctions_fnc_Hit;}];
+		_x addEventHandler ["Killed", {[_this select 0, _this select 1] call GhostFunctions_fnc_Death;}];
 		_x setUnitPos "UP";
 		_x enableFatigue false;
 	};

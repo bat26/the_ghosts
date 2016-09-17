@@ -11,7 +11,7 @@ switch (_scenario) do
 {
     case "normal": {
             _conversation1 = ["tm1_start1a", "tm2_start1a"] call BIS_fnc_selectRandom;
-            _conversation2 = ["tm1_start1b", "tm2_start2b"] call BIS_fnc_selectRandom;
+            _conversation2 = ["tm1_start1b", "tm2_start1b"] call BIS_fnc_selectRandom;
     };
     default { hint "Cannot find chatter for this scenario" };
 };
