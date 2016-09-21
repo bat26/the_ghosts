@@ -4,8 +4,8 @@
 
 class Campaign
 {
-	name = "CO1 - The First Part";
-	disableMP = 1;
+	name = "The Ghosts of Chernarus";
+	disableMP = 0;
 
 	briefingName = "The Ghosts have been deployed to Chernarus to contain a Russiab backed insurgency to the north."; // Name
 	author = "ecurb";	// Author
@@ -18,42 +18,34 @@ class Campaign
 	// Default template from which missions inherit
 	class MissionDefault
 	{
-		lives = -1;
-
-		lost = ;
-		end1 = ;
-		end2 = ;
-		end3 = ;
-		end4 = ;
-		end5 = ;
-		end6 = ;
+//		lives = -1;
+//		lost = 1;
+//		end1 = ;
+//		end2 = ;
+//		end3 = ;
+//		end4 = ;
+//		end5 = ;
+//		end6 = ;
 	};
 
 	// Class containing missions, functions as a chapter
 	class Missions
 	{
-		name = "The Beginning";
-		cutscene = ;			// Cutscene that plays at the chapter start, does not appear in mission list
-		firstMission = Example01;	// Class of the first mission of the chapter
-		end1 = ;			// Chapter endings. Uses classes of defined chapters to move on to. Blank ends the campaign
-		end2 = ;
-		end3 = ;
-		end4 = ;
-		end5 = ;
-		end6 = ;
-		lost = ;
+		name = "The Ghosts of Chernarus";
+//		cutscene = ;			// Cutscene that plays at the chapter start, does not appear in mission list
+		firstMission = MO1;	// Class of the first mission of the chapter
+//		end1 = ;			// Chapter endings. Uses classes of defined chapters to move on to. Blank ends the campaign
+//		end2 = ;
+//		end3 = ;
+//		end4 = ;
+//		end5 = ;
+//		end6 = ;
+//		lost = ;
 
 		// First mission in the list
-		class Example01: MissionDefault
+		class MO1: MissionDefault
 		{
-			template = Example01.Altis;	// Mission file. They must always be located in the 'Missions' folder within the campaign
-			end1 = Example02;		// Endings. Uses classes of defined missions within episode to move on to. Blank ends the campaign
-		};
-
-		// Second mission in the list, ends the episode
-		class Example02: MissionDefault
-		{
-			template = Example02.Altis;
+			template = goc_m01_iron_dragon.Chernarus_Summer;	// Mission file. They must always be located in the 'Missions' folder within the campaign
 		};
 	};
 };

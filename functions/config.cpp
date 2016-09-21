@@ -30,6 +30,11 @@ class CfgFunctions
 		class Mission
 		{
 		    class MissionChatter {file = "\the_ghosts\functions\mission\chatter.sqf";};
+            class MissionSetup {file = "\the_ghosts\functions\mission\setup.sqf";};
+
+            //objectives
+            class Demolitions {file = "\the_ghosts\functions\mission\objective\demolitions.sqf";};
+
 		};
 
 		// Scripts for vehicles

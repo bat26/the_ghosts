@@ -53,3 +53,7 @@ If you wish to add or branch this project please follow these styles
 * Camelcasing for all variables.
 * File wording to be split with underscores.
 * If a group of files can be grouped, then place them into a subfolder to improve the organisation of the project.
+
+# Thanks / Credits
+
+commy2 for all the help on Arma Discord 
