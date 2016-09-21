@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/bat26/the_ghosts/blob/master/the%20ghosts.png?raw=true" height="400px" width="200px" alt="The Ghosts"/>
+  <img src="https://github.com/bat26/the_ghosts/blob/master/the%20ghosts.png?raw=true" height="400px" width="400px" alt="The Ghosts"/>
 </p>
 
 
