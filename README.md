@@ -1,4 +1,8 @@
-![The Ghosts](https://github.com/bat26/the_ghosts/blob/master/the%20ghosts.png?raw=true "The Ghosts")
+<p align="center">
+  <img src="https://github.com/bat26/the_ghosts/blob/master/the%20ghosts.png?raw=true" height="400px" width="200px" alt="The Ghosts"/>
+</p>
+
+
 
 # The Ghosts
 The Ghosts is an immersive campaign focussed around an elite company of US soldiers who are deployed as the vanguard force into a theatre of conflict.
