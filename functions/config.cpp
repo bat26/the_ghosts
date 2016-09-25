@@ -31,9 +31,11 @@ class CfgFunctions
 		{
 		    class MissionChatter {file = "\the_ghosts\functions\mission\chatter.sqf";};
             class MissionSetup {file = "\the_ghosts\functions\mission\setup.sqf";};
+            class TaskCompleted {file = "\the_ghosts\functions\mission\task_completed.sqf";};
 
             //objectives
             class Demolitions {file = "\the_ghosts\functions\mission\objective\demolitions.sqf";};
+            class Hostage {file = "\the_ghosts\functions\mission\objective\hostage.sqf";};
 
 		};
 

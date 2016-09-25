@@ -24,3 +24,8 @@ enableRadio false;
 		_x setskill ["spotTime",0.5]; _x setskill ["spotDistance",0.15]; _x setSkill ["aimingspeed", 0.30]; _x setSkill ["aimingaccuracy", 0.17];
 	};
 } forEach allUnits;
+
+
+	{
+		_x addEventHandler ["Hit", {[_this select 0, _this select 1] spawn testFunc;}];
+    } forEach allUnits;

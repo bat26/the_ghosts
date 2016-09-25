@@ -12,8 +12,11 @@ class CfgPatches
 class CfgSounds
 {
     sounds[] = {};
-    #include "male1.hpp"
-    #include "male2.hpp"
-    #include "male3.hpp"
+    #include "ghosts/male1.hpp"
+    #include "ghosts/male2.hpp"
+    #include "ghosts/male3.hpp"
     #include "helicopter.hpp"
+
+    //enemy sounds
+    #include "hostiles/russian.hpp"
 };

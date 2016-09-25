@@ -28,24 +28,27 @@ private _count = 1;
         2,
         true] call BIS_fnc_taskCreate;
 
-        //create demolitions interaction - TODO create icon for demolitions
+        //create demolitions interaction
         [
         _thisTarget,
         _targetDescription,
-        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
-        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
+        "\the_ghosts\ui\icons\demolitions.paa",
+        "\the_ghosts\ui\icons\demolitions.paa",
         "_this distance _target < 4",
         "_caller distance _target < 4",
         {},
         {},
-        {[_this select 3 select 0, "SUCCEEDED",true] spawn BIS_fnc_taskSetState;},
+        {
+            ["demo"] call GhostFunctions_fnc_TaskCompleted;
+            [_this select 3 select 0, "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
+        },
         {},
         [_demoTask],
         10,
         0,
         true,
         false
-    ] call BIS_fnc_holdActionAdd;
+    ] remoteExec ["BIS_fnc_holdActionAdd",[0,-2] select isDedicated, true];
 
     _count = _count +1;
 
