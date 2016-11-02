@@ -1,6 +1,15 @@
-/*
-   This function provides effects when completed tasks e.g. playing a sound when a task is done
-*/
+/**
+	the_ghosts / ghost_task_completed
+
+	Description:  provides effects when completed tasks e.g. playing a sound when a task is done
+
+	Parameters:
+	0 - STRING - task type that was completed e.g. "demolitios" , "hostage"
+
+	Returns:
+
+    Created by Bruce on 02/10/2016.
+**/
 
 params ["_taskType"];
 

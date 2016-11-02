@@ -18,11 +18,11 @@ class CfgUnitInsignia
 		textureVehicle = "";
 	};
 
-    class GhostPatch_OD
+    class GhostPatchGreen
     {
-        displayName = "Ghost Patch OD";
+        displayName = "Ghost Patch Green";
         author = "ecurb";
-        texture = "\the_ghosts\patches\goc_patch_od.paa";
+        texture = "\the_ghosts\patches\goc_patch_green.paa";
         textureVehicle = "";
     };
 

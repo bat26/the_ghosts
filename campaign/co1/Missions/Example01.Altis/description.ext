@@ -1,7 +1,0 @@
-﻿/*
-	More information about the description.ext is available here: https://community.bistudio.com/wiki/Description.ext
-*/
-briefingName = "Example Mission 1";	// Name
-author = "Bohemia Interactive"; // Author
-overviewPicture = "a3\missions_f_epa\data\img\a_m02_overview_ca.paa"; // Image
-overviewText = "An example of a mission within a campaign in the addon format."; // Overview

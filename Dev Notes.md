@@ -15,7 +15,10 @@
 # References
 
 * Marker Types https://community.bistudio.com/wiki/cfgMarkers
+
 * Scripting commands https://community.bistudio.com/wiki/Category:Scripting_Commands_Arma_3
+* List of all ArmA 3 functions https://community.bistudio.com/wiki/Category:Arma_3:_Functions
+
 * Magic variables https://community.bistudio.com/wiki/Magic_Variables
 * Hold Actions https://forums.bistudio.com/topic/192346-woah-woah-woah-bi-trying-to-sneak-one-in/page-2#entry3065996
 * Intro script http://www.armaholic.com/page.php?id=30731

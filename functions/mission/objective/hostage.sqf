@@ -1,14 +1,22 @@
-/*
-    hostage.sqf
-    Sets a unit as a hostage and creates an objective to free them and return them to marker
+/**
+	the_ghosts / hostage
 
-    Argument 1 - Array of Hostages
-    Argument 2 - Map marker for Exfiltration point
-*/
+	Description: makes a specified unit a hostage/captive , creates an objective to rescue the hostage as well as a task
+	to evactuate the hostage to a safe zone on the map
+
+	Parameters:
+	0 - ARRAY - hostage units
+	1 - STRING - map marker name for the safe zone
+
+	Returns:
+	ARRAY - _objectivesCreated
+
+    Created by Bruce on 02/10/2016.
+**/
 
 params ["_hostages", "_extractionPoint"];
 private _count = 1;
-
+private _objectivesCreated = [];
 
 {
     private _hostage = _x;
@@ -28,11 +36,11 @@ private _count = 1;
     _hostage allowFleeing 0;
     _hostage setBehaviour "Careless";
 
-    private _rescueTask = ["hostageMarker", _count] joinString "";
+    private _rescueTask = ["hostageTask", _count] joinString "";
     [
         west,
         _rescueTask,
-        ["Locat and free the Hostage","SAR Locate"],
+        ["Locate and free the Hostage","SAR Locate"],
         getPos _hostage,
         1,
         2,
@@ -63,7 +71,7 @@ private _count = 1;
                    _hostage switchMove "Acts_AidlPsitMstpSsurWnonDnon_out";
                 };
 
-            ["hostage"] call GhostFunctions_fnc_TaskCompleted;
+            ["hostage"] call GhostFunctions_fnc_taskCompleted;
             [_hostageTask, _evacPoint] call BIS_fnc_taskSetDestination;
             [_hostageTask, ["Evacuate Hostage to this position", "SAR Evac", _evacPoint]] spawn BIS_fnc_taskSetDescription;
             [_hostageTask, "ASSIGNED"] spawn BIS_fnc_taskHint;
@@ -97,5 +105,7 @@ private _count = 1;
     ] remoteExec ["BIS_fnc_holdActionAdd",[0,-2] select isDedicated, true];
 
     _count = _count +1;
+    _objectivesCreated pushBack _hostageTask;
 
 } forEach _hostages;
+_objectivesCreated

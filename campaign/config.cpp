@@ -19,10 +19,10 @@ class CfgMissions
 	class Campaigns
 	{
 		// The campaign package
-		class The_Ghosts_CO1
+		class Example_Campaign
 		{
 			// Location of the campaign files. Note that it uses the defined directory in CfgPatches
-			directory = "\the_ghosts\campaign\co1";
+			directory = "\the_ghosts\campaign\Campaign";
 		};
 	};
 };
